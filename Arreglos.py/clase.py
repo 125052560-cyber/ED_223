@@ -18,3 +18,17 @@ print(matriz)
 matriz[0].pop(2) #Elimina el segundo elemento de la primera fila
 print("matriz despues de eliminar un elemento:")
 print(matriz)
+from collections import deque
+#1.crear la cola (fila de personas)
+cola=deque(["Ana","Carlos"])
+cola.append("jorge")
+cola.append("Andres")
+print("cola actual:",cola)
+atendido = cola.popleft()
+print(f"Se atendió a: {atendido}")
+
+print("Cola nestante:",cola)
+
+atendido = cola.popleft()
+print(f"Se atendió a: {atendido}")
+print("Cola restante:", cola)
